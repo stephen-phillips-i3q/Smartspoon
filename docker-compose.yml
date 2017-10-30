@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  smartspoon:
+    image: smartspoon
+    build:
+      context: ./Smartspoon.Service
+      dockerfile: Dockerfile

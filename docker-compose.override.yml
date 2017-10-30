@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  smartspoon:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "81"
+networks:
+  default:
+    external:
+      name: nat

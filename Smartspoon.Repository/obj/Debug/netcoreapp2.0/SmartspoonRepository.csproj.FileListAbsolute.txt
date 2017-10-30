@@ -1,0 +1,8 @@
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\bin\Debug\netcoreapp2.0\SmartspoonRepository.deps.json
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\bin\Debug\netcoreapp2.0\SmartspoonRepository.dll
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\bin\Debug\netcoreapp2.0\SmartspoonRepository.pdb
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\obj\Debug\netcoreapp2.0\SmartspoonRepository.csproj.CoreCompileInputs.cache
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\obj\Debug\netcoreapp2.0\SmartspoonRepository.AssemblyInfoInputs.cache
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\obj\Debug\netcoreapp2.0\SmartspoonRepository.AssemblyInfo.cs
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\obj\Debug\netcoreapp2.0\SmartspoonRepository.dll
+D:\GitProjects\Personal\Smartspoon\SmartspoonRepository\obj\Debug\netcoreapp2.0\SmartspoonRepository.pdb
