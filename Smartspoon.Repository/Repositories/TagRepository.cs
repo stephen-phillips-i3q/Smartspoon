@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using Smartspoon.Repository.Configuration;
-using Smartspoon.Repository.Enums;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Tag = Smartspoon.Repository.Models.Tag;
 
 namespace Smartspoon.Repository.Repositories
@@ -16,6 +13,12 @@ namespace Smartspoon.Repository.Repositories
     /// </summary>
     public class TagRepository : BaseRepository<Tag>, ITagRepository
     {
+        #region Constants
+
+        private const string TagCollectionName = "tags";
+
+        #endregion Constants
+
         #region Constructors
 
         /// <summary>
@@ -23,7 +26,9 @@ namespace Smartspoon.Repository.Repositories
         /// </summary>
         /// <param name="settings">The settings.</param>
         public TagRepository(IOptions<DataConnectionSettings> settings) : base(settings)
-        { }
+        {
+            base.Context.CollectionName = TagCollectionName;
+        }
 
         #endregion Constructors
 
@@ -50,7 +55,7 @@ namespace Smartspoon.Repository.Repositories
                 return new Tag();
 
             var tag = await Context.Collection.Find(t => t.Id == tagId).Limit(1).FirstOrDefaultAsync();
-            if(tag == null)
+            if (tag == null)
                 return new Tag();
 
             return tag;

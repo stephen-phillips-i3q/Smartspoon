@@ -15,4 +15,3 @@ D:\GitProjects\Personal\Smartspoon\Smartspoon.Repository\obj\Debug\netcoreapp2.0
 D:\GitProjects\Personal\Smartspoon\Smartspoon.Repository\obj\Debug\netcoreapp2.0\Smartspoon.Repository.AssemblyInfo.cs
 D:\GitProjects\Personal\Smartspoon\Smartspoon.Repository\obj\Debug\netcoreapp2.0\Smartspoon.Repository.dll
 D:\GitProjects\Personal\Smartspoon\Smartspoon.Repository\obj\Debug\netcoreapp2.0\Smartspoon.Repository.pdb
-D:\GitProjects\Personal\Smartspoon\Smartspoon.Repository\obj\Debug\netcoreapp2.0\Smartspoon.Repository.csprojResolveAssemblyReference.cache

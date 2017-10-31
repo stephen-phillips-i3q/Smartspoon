@@ -4,9 +4,12 @@ services:
   smartspoon:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "81"
+    networks:
+      my_network:
+        ipv4_address: 173.23.34.2
 networks:
   default:
     external:
       name: nat
+  my_network:
+    external: true

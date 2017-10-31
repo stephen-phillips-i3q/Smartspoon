@@ -3,6 +3,8 @@ version: '3'
 services:
   smartspoon:
     image: smartspoon
+    ports:
+    - "81"
     build:
       context: ./Smartspoon.Service
       dockerfile: Dockerfile

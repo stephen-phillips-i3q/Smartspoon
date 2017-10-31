@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
-using Smartspoon.Repository.Enums;
 using Smartspoon.Repository.Repositories;
 using System.Collections.Generic;
 using Tag = Smartspoon.Repository.Models.Tag;
@@ -58,10 +57,13 @@ namespace Smartspoon.Service.Controllers
         #region Post Services
 
         // POST api/tag
+        /// <summary>
+        /// Posts the specified tag identifier.
+        /// </summary>
+        /// <param name="tag">The tag.</param>
         [HttpPost]
-        public void Post([FromBody] string tagId, [FromBody] TagType tagType)
+        public void Post([FromBody] Tag tag)
         {
-            var tag = new Tag {Id = tagId, Type = tagType};
             TagRepository.RegisterTag(tag);
         }
 
